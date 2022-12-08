@@ -180,6 +180,11 @@ body {
 	text-transform: uppercase;
 }
 
+.menu__item-link:link { text-decoration: none; }
+.menu__item-link:visited { text-decoration: none; }
+.menu__item-link:hover { text-decoration: none; }
+.menu__item-link:active { text-decoration: none; }
+
 .menu__item-link::before {
 	all: initial;
 	text-transform: uppercase;
