@@ -169,6 +169,35 @@ body {
 	margin: 4px;
 }
 
+.menu__item-static {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	color: #234c68;
+	font-family: "Bigilla";
+	text-transform: uppercase;
+	white-space: nowrap;
+	font-size: 8vw;
+	padding: 1.6vw 1vw;
+	font-weight: 900;
+}
+
+.menu__item-static::before {
+	all: initial;
+	text-transform: uppercase;
+	counter-increment: menu;
+	position: absolute;
+	bottom: 60%;
+	left: 0;
+	pointer-events: none;
+}
+
+.home_link:link { text-decoration: none; }
+.home_link:visited { text-decoration: none; }
+.home_link:hover { text-decoration: none; }
+.home_link:active { text-decoration: none; }
+
+
 .menu__item-link {
 	display: inline-block;
 	cursor: pointer;
@@ -268,6 +297,7 @@ body {
 }
 
 .menu__item-link,
+.menu__item-static,
 .marquee span {
 	white-space: nowrap;
 	font-size: 8vw;
